@@ -31,6 +31,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         // Do any additional setup after loading the view.\
         
+     
+        
         viewModel.getDataFromAPIHandlerClass(url: EndPoint.strUrl){
             print("Got Data From API")
             DispatchQueue.main.async {
