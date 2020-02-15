@@ -11,9 +11,10 @@ import UIKit
 
 class FirstPageVC : ViewController {
     
+    var details: String = ""
     
     override func viewDidLoad() {
-        
+        print("Details is \(details)")
     }
 }
 

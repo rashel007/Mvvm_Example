@@ -24,6 +24,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = storyboard?.instantiateViewController(identifier: "FirstPageVC") as! FirstPageVC
+        
+        vc.details = viewModel.getUserAtIndex(index: indexPath.row).title!
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
     
     @IBOutlet var tableView: UITableView!
     var viewModel = UserViewModel()
@@ -32,11 +39,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         // Do any additional setup after loading the view.\
     
-     
+        self.showLoadingSpinner()
         
         viewModel.getDataFromAPIHandlerClass(url: EndPoint.strUrl){
             print("Got Data From API")
             DispatchQueue.main.async {
+                self.hideLoadingSpinner()
                 self.tableView.reloadData()
             }
            

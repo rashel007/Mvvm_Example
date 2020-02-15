@@ -13,6 +13,7 @@
 		26889CA323F807DA007B8AC1 /* DynamicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26889CA123F807DA007B8AC1 /* DynamicTableViewCell.swift */; };
 		26889CA423F807DA007B8AC1 /* DynamicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26889CA223F807DA007B8AC1 /* DynamicTableViewCell.xib */; };
 		26889CA623F80FCB007B8AC1 /* SelfSizingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26889CA523F80FCB007B8AC1 /* SelfSizingTableViewCell.swift */; };
+		26889CA923F8617D007B8AC1 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26889CA823F8617D007B8AC1 /* Utils.swift */; };
 		26B47A2723F19B2700960692 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B47A2623F19B2700960692 /* AppDelegate.swift */; };
 		26B47A2923F19B2700960692 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B47A2823F19B2700960692 /* SceneDelegate.swift */; };
 		26B47A2B23F19B2700960692 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B47A2A23F19B2700960692 /* ViewController.swift */; };
@@ -32,6 +33,7 @@
 		26889CA123F807DA007B8AC1 /* DynamicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTableViewCell.swift; sourceTree = "<group>"; };
 		26889CA223F807DA007B8AC1 /* DynamicTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DynamicTableViewCell.xib; sourceTree = "<group>"; };
 		26889CA523F80FCB007B8AC1 /* SelfSizingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfSizingTableViewCell.swift; sourceTree = "<group>"; };
+		26889CA823F8617D007B8AC1 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		26B47A2323F19B2600960692 /* Mvvm_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mvvm_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26B47A2623F19B2700960692 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26B47A2823F19B2700960692 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				26B47A3423F19B8100960692 /* Info.plist */,
 				26889CA123F807DA007B8AC1 /* DynamicTableViewCell.swift */,
 				26889CA223F807DA007B8AC1 /* DynamicTableViewCell.xib */,
+				26889CA823F8617D007B8AC1 /* Utils.swift */,
 			);
 			path = Mvvm_Example;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 				26B47A2B23F19B2700960692 /* ViewController.swift in Sources */,
 				262E285E23F467C6002D6DF6 /* FirstPageVC.swift in Sources */,
 				262E286223F4684D002D6DF6 /* ThirdPageVC.swift in Sources */,
+				26889CA923F8617D007B8AC1 /* Utils.swift in Sources */,
 				262E286023F4680E002D6DF6 /* SeconPageVC.swift in Sources */,
 				26889CA323F807DA007B8AC1 /* DynamicTableViewCell.swift in Sources */,
 				26B47A3D23F1A44D00960692 /* Constant.swift in Sources */,
