@@ -19,14 +19,30 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="oDX-UP-fJd">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="lEf-wn-LWl" customClass="SelfSizingTableViewCell" customModule="Mvvm_Example" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oDX-UP-fJd" id="cXK-7l-sng">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lEf-wn-LWl" id="G4Z-HC-21I">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bKO-vA-rEc">
+                                                    <rect key="frame" x="20" y="11" width="374" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="bKO-vA-rEc" secondAttribute="trailing" constant="20" id="T4c-Ni-9yK"/>
+                                                <constraint firstAttribute="bottom" secondItem="bKO-vA-rEc" secondAttribute="bottom" constant="11" id="nF6-6i-3sB"/>
+                                                <constraint firstItem="bKO-vA-rEc" firstAttribute="leading" secondItem="G4Z-HC-21I" secondAttribute="leading" constant="20" id="w9f-2x-mTj"/>
+                                                <constraint firstItem="bKO-vA-rEc" firstAttribute="top" secondItem="G4Z-HC-21I" secondAttribute="top" constant="11" id="zTf-4D-r0s"/>
+                                            </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="selfSizingLabel" destination="bKO-vA-rEc" id="Oyf-zi-Wnk"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -97,14 +113,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="2nd View Controller" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eyf-Qi-A1m">
-                                <rect key="frame" x="20" y="443" width="374" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="clF-cc-vdW">
+                                <rect key="frame" x="107" y="141" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="clF-cc-vdW" secondAttribute="height" multiplier="2:1" id="a0y-tM-ofc"/>
+                                    <constraint firstAttribute="height" constant="100" id="bat-zJ-vSd"/>
+                                    <constraint firstAttribute="width" constant="200" id="u2N-YO-hu5"/>
+                                </constraints>
+                                <state key="normal" image="spain"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="id2-xt-Jqt">
+                                <rect key="frame" x="107" y="261" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="id2-xt-Jqt" secondAttribute="height" multiplier="2:1" id="0GP-3C-stU"/>
+                                    <constraint firstAttribute="width" constant="200" id="j5F-Eg-Gor"/>
+                                    <constraint firstAttribute="height" constant="100" id="zqL-Bo-reN"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="france"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L1G-8A-YZe">
+                                <rect key="frame" x="107" y="381" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="7mt-h0-nzA"/>
+                                    <constraint firstAttribute="width" secondItem="L1G-8A-YZe" secondAttribute="height" multiplier="2:1" id="hA7-zA-NYP"/>
+                                    <constraint firstAttribute="height" constant="100" id="p1B-hh-znr"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="poland"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="L1G-8A-YZe" firstAttribute="centerX" secondItem="id2-xt-Jqt" secondAttribute="centerX" id="HB1-xG-qKb"/>
+                            <constraint firstItem="L1G-8A-YZe" firstAttribute="top" secondItem="id2-xt-Jqt" secondAttribute="bottom" constant="20" id="KeH-ri-xaU"/>
+                            <constraint firstItem="id2-xt-Jqt" firstAttribute="height" secondItem="clF-cc-vdW" secondAttribute="height" id="Tbf-Ad-pd7"/>
+                            <constraint firstItem="clF-cc-vdW" firstAttribute="top" secondItem="ocv-pO-ufu" secondAttribute="top" constant="53" id="X79-07-zAc"/>
+                            <constraint firstItem="id2-xt-Jqt" firstAttribute="top" secondItem="clF-cc-vdW" secondAttribute="bottom" constant="20" id="Yr3-lg-Q8y"/>
+                            <constraint firstItem="id2-xt-Jqt" firstAttribute="centerX" secondItem="clF-cc-vdW" secondAttribute="centerX" id="ewr-NO-Jsz"/>
+                            <constraint firstItem="L1G-8A-YZe" firstAttribute="height" secondItem="id2-xt-Jqt" secondAttribute="height" id="iPP-1O-g9c"/>
+                            <constraint firstItem="ocv-pO-ufu" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="L1G-8A-YZe" secondAttribute="bottom" constant="20" id="m3l-U8-IqR"/>
+                            <constraint firstItem="clF-cc-vdW" firstAttribute="centerX" secondItem="ocv-pO-ufu" secondAttribute="centerX" id="ztb-Xa-2KA"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ocv-pO-ufu"/>
                     </view>
                     <navigationItem key="navigationItem" title="2nd" id="uqF-dv-AjD">
@@ -114,6 +162,11 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="button1" destination="clF-cc-vdW" id="EE7-09-gcN"/>
+                        <outlet property="button2" destination="id2-xt-Jqt" id="P4U-24-Y30"/>
+                        <outlet property="button3" destination="L1G-8A-YZe" id="SoN-oX-bpZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KQD-61-qK0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -206,4 +259,9 @@
             <point key="canvasLocation" x="137.68115942028987" y="112.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="france" width="200" height="100"/>
+        <image name="poland" width="200" height="100"/>
+        <image name="spain" width="200" height="100"/>
+    </resources>
 </document>

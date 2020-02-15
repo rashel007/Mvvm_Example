@@ -18,9 +18,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let user = viewModel.getUserAtIndex(index: indexPath.row)
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell")
-        cell?.textLabel?.text = "\(user.userId!) - \(user.title!)"
-        return cell!
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! SelfSizingTableViewCell
+       
+        cell.selfSizingLabel.text = "\(user.body!)"
+        return cell
     }
     
     
@@ -30,7 +31,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.\
-        
+    
      
         
         viewModel.getDataFromAPIHandlerClass(url: EndPoint.strUrl){
