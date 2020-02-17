@@ -14,6 +14,12 @@
 		26889CA423F807DA007B8AC1 /* DynamicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26889CA223F807DA007B8AC1 /* DynamicTableViewCell.xib */; };
 		26889CA623F80FCB007B8AC1 /* SelfSizingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26889CA523F80FCB007B8AC1 /* SelfSizingTableViewCell.swift */; };
 		26889CA923F8617D007B8AC1 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26889CA823F8617D007B8AC1 /* Utils.swift */; };
+		268B1F0B23FAF6410019FDE7 /* SignInResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268B1F0A23FAF6410019FDE7 /* SignInResponse.swift */; };
+		268B1F0D23FAF6670019FDE7 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268B1F0C23FAF6670019FDE7 /* Authentication.swift */; };
+		268B1F0F23FAF67A0019FDE7 /* SessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268B1F0E23FAF67A0019FDE7 /* SessionService.swift */; };
+		268B1F1223FAF8140019FDE7 /* SignInDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268B1F1123FAF8140019FDE7 /* SignInDelegate.swift */; };
+		268B1F1423FAF8720019FDE7 /* SIgnInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268B1F1323FAF8720019FDE7 /* SIgnInViewModel.swift */; };
+		268B1F1623FAFBCD0019FDE7 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268B1F1523FAFBCD0019FDE7 /* SignInViewController.swift */; };
 		26B47A2723F19B2700960692 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B47A2623F19B2700960692 /* AppDelegate.swift */; };
 		26B47A2923F19B2700960692 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B47A2823F19B2700960692 /* SceneDelegate.swift */; };
 		26B47A2B23F19B2700960692 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B47A2A23F19B2700960692 /* ViewController.swift */; };
@@ -34,6 +40,12 @@
 		26889CA223F807DA007B8AC1 /* DynamicTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DynamicTableViewCell.xib; sourceTree = "<group>"; };
 		26889CA523F80FCB007B8AC1 /* SelfSizingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfSizingTableViewCell.swift; sourceTree = "<group>"; };
 		26889CA823F8617D007B8AC1 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		268B1F0A23FAF6410019FDE7 /* SignInResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInResponse.swift; sourceTree = "<group>"; };
+		268B1F0C23FAF6670019FDE7 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
+		268B1F0E23FAF67A0019FDE7 /* SessionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionService.swift; sourceTree = "<group>"; };
+		268B1F1123FAF8140019FDE7 /* SignInDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInDelegate.swift; sourceTree = "<group>"; };
+		268B1F1323FAF8720019FDE7 /* SIgnInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIgnInViewModel.swift; sourceTree = "<group>"; };
+		268B1F1523FAFBCD0019FDE7 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		26B47A2323F19B2600960692 /* Mvvm_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mvvm_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26B47A2623F19B2700960692 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26B47A2823F19B2700960692 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +81,35 @@
 			path = navigation;
 			sourceTree = "<group>";
 		};
+		268B1F0823FAF5F60019FDE7 /* mvvm_2 */ = {
+			isa = PBXGroup;
+			children = (
+				268B1F1023FAF7F70019FDE7 /* view_model */,
+				268B1F0923FAF61F0019FDE7 /* model */,
+				268B1F1523FAFBCD0019FDE7 /* SignInViewController.swift */,
+			);
+			path = mvvm_2;
+			sourceTree = "<group>";
+		};
+		268B1F0923FAF61F0019FDE7 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				268B1F0C23FAF6670019FDE7 /* Authentication.swift */,
+				268B1F0A23FAF6410019FDE7 /* SignInResponse.swift */,
+				268B1F0E23FAF67A0019FDE7 /* SessionService.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		268B1F1023FAF7F70019FDE7 /* view_model */ = {
+			isa = PBXGroup;
+			children = (
+				268B1F1123FAF8140019FDE7 /* SignInDelegate.swift */,
+				268B1F1323FAF8720019FDE7 /* SIgnInViewModel.swift */,
+			);
+			path = view_model;
+			sourceTree = "<group>";
+		};
 		26B47A1A23F19B2400960692 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +129,7 @@
 		26B47A2523F19B2700960692 /* Mvvm_Example */ = {
 			isa = PBXGroup;
 			children = (
+				268B1F0823FAF5F60019FDE7 /* mvvm_2 */,
 				262E285C23F46797002D6DF6 /* navigation */,
 				26B47A4223F1C6E900960692 /* mvvm_1 */,
 				26B47A2623F19B2700960692 /* AppDelegate.swift */,
@@ -190,14 +232,20 @@
 			files = (
 				26B47A3B23F1A26B00960692 /* User.swift in Sources */,
 				26889CA623F80FCB007B8AC1 /* SelfSizingTableViewCell.swift in Sources */,
+				268B1F1223FAF8140019FDE7 /* SignInDelegate.swift in Sources */,
 				26B47A2B23F19B2700960692 /* ViewController.swift in Sources */,
+				268B1F1423FAF8720019FDE7 /* SIgnInViewModel.swift in Sources */,
 				262E285E23F467C6002D6DF6 /* FirstPageVC.swift in Sources */,
+				268B1F0F23FAF67A0019FDE7 /* SessionService.swift in Sources */,
 				262E286223F4684D002D6DF6 /* ThirdPageVC.swift in Sources */,
 				26889CA923F8617D007B8AC1 /* Utils.swift in Sources */,
+				268B1F1623FAFBCD0019FDE7 /* SignInViewController.swift in Sources */,
 				262E286023F4680E002D6DF6 /* SeconPageVC.swift in Sources */,
 				26889CA323F807DA007B8AC1 /* DynamicTableViewCell.swift in Sources */,
+				268B1F0D23FAF6670019FDE7 /* Authentication.swift in Sources */,
 				26B47A3D23F1A44D00960692 /* Constant.swift in Sources */,
 				26B47A3F23F1A48B00960692 /* APIHandler.swift in Sources */,
+				268B1F0B23FAF6410019FDE7 /* SignInResponse.swift in Sources */,
 				26B47A2723F19B2700960692 /* AppDelegate.swift in Sources */,
 				26B47A4123F1A87700960692 /* UserViewModel.swift in Sources */,
 				26B47A2923F19B2700960692 /* SceneDelegate.swift in Sources */,
