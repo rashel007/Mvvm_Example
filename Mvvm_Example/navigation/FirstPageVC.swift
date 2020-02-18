@@ -25,8 +25,22 @@ class FirstPageVC : ViewController {
 //        let vc = storyboard.instantiateViewController(withIdentifier: "SignInViewController")
 //                   self.present(vc, animated: true, completion: nil);
         
-        performSegue(withIdentifier: "segue", sender: nil)
-    
+        
+        // performSegue(withIdentifier: "segue", sender: nil)
+        
+        let vc = storyboard!.instantiateViewController(withIdentifier: "SignInViewController") as! SignInViewController
+        
+        vc.mydemoDelegation = self
+        
+        self.navigationController?.pushViewController(vc, animated: true)
     }
+}
+
+extension FirstPageVC: MyDemoDelegate{
+    func message(username: String, password: String) {
+        print("FirstPageVC :  \(username) , \(password)")
+    }
+    
+    
 }
 

@@ -8,6 +8,13 @@
 
 import UIKit
 
+// protocol & delegation to pass data between views
+// protocol & delegation used for one to one data communication
+// this delegation will communicate data between FirstVC and this VC
+protocol MyDemoDelegate{
+    func message(username: String, password: String)
+}
+
 class SignInViewController: UIViewController {
     
     @IBOutlet weak var username: UITextField!
@@ -15,6 +22,10 @@ class SignInViewController: UIViewController {
     @IBOutlet weak var btnSignIn: UIButton!
     
     private var viewModel: SIgnInViewModel!
+    
+     var mydemoDelegation: MyDemoDelegate!
+    
+    
     
     override func viewDidLoad() {
         self.viewModel = SIgnInViewModel(authentication: SessionService())
@@ -47,6 +58,8 @@ class SignInViewController: UIViewController {
 extension SignInViewController: SignInDelegate {
     func didSignIn() {
          print("Signed In")
+        mydemoDelegation.message(username: self.viewModel.emailAddress, password: self.viewModel.password)
+        self.navigationController?.popViewController(animated: true)
     }
     
     func didFailSignIn(message: String) {
