@@ -46,6 +46,7 @@
 		268B1F1123FAF8140019FDE7 /* SignInDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInDelegate.swift; sourceTree = "<group>"; };
 		268B1F1323FAF8720019FDE7 /* SIgnInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIgnInViewModel.swift; sourceTree = "<group>"; };
 		268B1F1523FAFBCD0019FDE7 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		269C090923FDA8210030F981 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		26B47A2323F19B2600960692 /* Mvvm_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mvvm_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26B47A2623F19B2700960692 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26B47A2823F19B2700960692 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -141,6 +142,7 @@
 				26889CA123F807DA007B8AC1 /* DynamicTableViewCell.swift */,
 				26889CA223F807DA007B8AC1 /* DynamicTableViewCell.xib */,
 				26889CA823F8617D007B8AC1 /* Utils.swift */,
+				269C090923FDA8210030F981 /* README.md */,
 			);
 			path = Mvvm_Example;
 			sourceTree = "<group>";

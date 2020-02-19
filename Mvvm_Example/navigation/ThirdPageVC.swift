@@ -15,6 +15,8 @@ class ThirdPageVC: ViewController {
     }
     
     @IBAction func btnback(_ sender: Any) {
+        let notificationName = Notification.Name(secondvcObserver)
+        NotificationCenter.default.post(name: notificationName, object: nil)
         navigationController?.popViewController(animated: true)
     }
     @IBAction func btnBackToFirstView(_ sender: Any) {

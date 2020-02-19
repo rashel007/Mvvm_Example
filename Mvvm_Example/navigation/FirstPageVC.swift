@@ -13,8 +13,17 @@ class FirstPageVC : ViewController {
     
     var details: String = ""
     
+    @IBOutlet var testLabelFrist: UILabel!
+    var observer = Notification.Name(secondvcObserver)
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
     override func viewDidLoad() {
         print("Details is \(details)")
+        
+        makeObserver()
     }
     @IBAction func btnGoToMvvm2(_ sender: Any) {
 //        let vc = SignInViewController()
@@ -33,6 +42,15 @@ class FirstPageVC : ViewController {
         vc.mydemoDelegation = self
         
         self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func makeObserver() {
+        NotificationCenter.default.addObserver(self, selector: #selector(FirstPageVC.updateView(notification:)), name: observer, object: nil)
+    }
+    
+    @objc func updateView(notification: Notification) {
+        print("Notification 2 \(notification.name.rawValue)")
+        testLabelFrist.text = notification.name.rawValue
     }
 }
 

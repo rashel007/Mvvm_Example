@@ -112,15 +112,25 @@
                                     <action selector="btnGoToMvvm2:" destination="qHQ-Ey-WOX" eventType="touchUpInside" id="7s2-bO-n9Y"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="....." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5HN-St-t4R">
+                                <rect key="frame" x="16" y="395.66666666666669" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="xd5-fh-Eag" firstAttribute="top" secondItem="zM6-iU-6lN" secondAttribute="bottom" constant="60" id="M7h-5H-j5r"/>
+                            <constraint firstItem="Kug-Ud-NTJ" firstAttribute="trailing" secondItem="5HN-St-t4R" secondAttribute="trailing" constant="16" id="Y0i-dJ-c4K"/>
                             <constraint firstItem="zM6-iU-6lN" firstAttribute="leading" secondItem="Kug-Ud-NTJ" secondAttribute="leading" constant="8" id="gh5-1W-aBi"/>
                             <constraint firstItem="xd5-fh-Eag" firstAttribute="leading" secondItem="Kug-Ud-NTJ" secondAttribute="leading" constant="8" id="mKJ-Eg-xUx"/>
                             <constraint firstItem="Kug-Ud-NTJ" firstAttribute="trailing" secondItem="zM6-iU-6lN" secondAttribute="trailing" constant="8" id="nIP-tc-OpV"/>
+                            <constraint firstItem="5HN-St-t4R" firstAttribute="centerX" secondItem="MVu-a3-fsN" secondAttribute="centerX" id="u7T-jk-H2n"/>
                             <constraint firstItem="Kug-Ud-NTJ" firstAttribute="trailing" secondItem="xd5-fh-Eag" secondAttribute="trailing" constant="8" id="wSE-Tj-plX"/>
+                            <constraint firstItem="5HN-St-t4R" firstAttribute="centerY" secondItem="MVu-a3-fsN" secondAttribute="centerY" id="zFn-Ty-Bf2"/>
                             <constraint firstItem="zM6-iU-6lN" firstAttribute="top" secondItem="Kug-Ud-NTJ" secondAttribute="top" constant="62" id="zRd-i9-uFw"/>
+                            <constraint firstItem="5HN-St-t4R" firstAttribute="leading" secondItem="Kug-Ud-NTJ" secondAttribute="leading" constant="16" id="zUJ-fv-Ica"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Kug-Ud-NTJ"/>
                     </view>
@@ -132,12 +142,13 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="testLabelFrist" destination="5HN-St-t4R" id="s6K-kv-whK"/>
                         <segue destination="QtF-Oq-t0J" kind="show" identifier="segue" id="ZV5-48-tuq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GQa-oW-lLa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1757.9710144927537" y="112.5"/>
+            <point key="canvasLocation" x="1757.5999999999999" y="112.3152709359606"/>
         </scene>
         <!--2nd-->
         <scene sceneID="gZ0-rJ-bir">
@@ -174,14 +185,23 @@
                                 </constraints>
                                 <state key="normal" title="Button" image="poland"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="....." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5p-sJ-UzU">
+                                <rect key="frame" x="16" y="522" width="343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="b5p-sJ-UzU" firstAttribute="leading" secondItem="ocv-pO-ufu" secondAttribute="leading" constant="16" id="0LS-6f-1R8"/>
+                            <constraint firstItem="ocv-pO-ufu" firstAttribute="trailing" secondItem="b5p-sJ-UzU" secondAttribute="trailing" constant="16" id="3ZS-cT-8Ng"/>
                             <constraint firstItem="L1G-8A-YZe" firstAttribute="centerX" secondItem="id2-xt-Jqt" secondAttribute="centerX" id="HB1-xG-qKb"/>
                             <constraint firstItem="L1G-8A-YZe" firstAttribute="top" secondItem="id2-xt-Jqt" secondAttribute="bottom" constant="20" id="KeH-ri-xaU"/>
                             <constraint firstItem="id2-xt-Jqt" firstAttribute="height" secondItem="clF-cc-vdW" secondAttribute="height" id="Tbf-Ad-pd7"/>
                             <constraint firstItem="clF-cc-vdW" firstAttribute="top" secondItem="ocv-pO-ufu" secondAttribute="top" constant="53" id="X79-07-zAc"/>
                             <constraint firstItem="id2-xt-Jqt" firstAttribute="top" secondItem="clF-cc-vdW" secondAttribute="bottom" constant="20" id="Yr3-lg-Q8y"/>
+                            <constraint firstItem="b5p-sJ-UzU" firstAttribute="top" secondItem="L1G-8A-YZe" secondAttribute="bottom" constant="41" id="cGz-gB-m0S"/>
                             <constraint firstItem="id2-xt-Jqt" firstAttribute="centerX" secondItem="clF-cc-vdW" secondAttribute="centerX" id="ewr-NO-Jsz"/>
                             <constraint firstItem="L1G-8A-YZe" firstAttribute="height" secondItem="id2-xt-Jqt" secondAttribute="height" id="iPP-1O-g9c"/>
                             <constraint firstItem="ocv-pO-ufu" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="L1G-8A-YZe" secondAttribute="bottom" constant="20" id="m3l-U8-IqR"/>
@@ -200,6 +220,7 @@
                         <outlet property="button1" destination="clF-cc-vdW" id="EE7-09-gcN"/>
                         <outlet property="button2" destination="id2-xt-Jqt" id="P4U-24-Y30"/>
                         <outlet property="button3" destination="L1G-8A-YZe" id="SoN-oX-bpZ"/>
+                        <outlet property="testLabelSecond" destination="b5p-sJ-UzU" id="qcM-fq-pGf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KQD-61-qK0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -264,7 +285,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZX5-vN-xUJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2597.5999999999999" y="834.97536945812806"/>
+            <point key="canvasLocation" x="3820" y="882"/>
         </scene>
         <!--3rd-->
         <scene sceneID="cea-O5-su4">
@@ -492,7 +513,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mNT-9k-Coc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1757" y="986"/>
+            <point key="canvasLocation" x="3072" y="950"/>
         </scene>
     </scenes>
     <resources>

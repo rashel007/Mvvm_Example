@@ -8,15 +8,25 @@
 
 import UIKit
 
+let secondvcObserver = "com.ea.secondvcobserver"
 
 class SeconPageVC : ViewController {
     @IBOutlet var button1: UIButton!
     @IBOutlet var button2: UIButton!
     @IBOutlet var button3: UIButton!
+    @IBOutlet var testLabelSecond: UILabel!
     
     var countries = [String]()
     
+    let observer = Notification.Name(rawValue: secondvcObserver)
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
     override func viewDidLoad() {
+        
+    
         
         countries += ["estonia", "france", "germany", "ireland"
         , "italy", "monaco", "nigeria", "poland", "russia",
@@ -33,6 +43,8 @@ class SeconPageVC : ViewController {
         
         askQuestion()
         
+        makeObservers()
+        
     }
     
     func askQuestion () {
@@ -40,5 +52,15 @@ class SeconPageVC : ViewController {
         button1.setImage(UIImage(named: countries[0]), for: .normal)
         button2.setImage(UIImage(named: countries[1]), for: .normal)
         button3.setImage(UIImage(named: countries[2]), for: .normal)
+    }
+    
+    
+    func makeObservers() {
+        NotificationCenter.default.addObserver(self, selector: #selector(SeconPageVC.updateView(notification:)), name: observer, object: nil)
+    }
+    
+    @objc func updateView(notification: Notification) {
+        print("notification 1 \(notification.name.rawValue)")
+        testLabelSecond.text = notification.name.rawValue
     }
 }
